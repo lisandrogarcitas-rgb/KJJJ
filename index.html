@@ -15,18 +15,57 @@
             color: white;
             font-family: 'PlanetKosmos';
             text-align: center;
-            padding-top: 100px;
+            padding-top: 60px;
         }
 
         h1 {
             font-size: 40px;
             letter-spacing: 5px;
         }
+
+        .boton {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .gif-left {
+            position: fixed;
+            left: 10px;
+            bottom: 10px;
+            width: 120px;
+        }
+
+        .gif-right {
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            width: 120px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Hola Mundo Industrial</h1>
-    <p>Esta es mi WEB con Planet Kosmos.</p>
+
+    <h1>MI ÁLBUM</h1>
+    <p>Escuchá el proyecto completo acá:</p>
+
+    <a class="boton" href="https://www.youtube.com/@jeejolinzy888" target="_blank">
+        ESCUCHAR AHORA
+    </a>
+
+    <img src="gif1.gif" class="gif-left">
+    <img src="gif2.gif" class="gif-right">
+
 </body>
 </html>
