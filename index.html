@@ -1,81 +1,43 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Web</title>
+<meta charset="UTF-8">
+<title>CD Player</title>
 
-    <style>
-        @font-face {
-            font-family: 'PlanetKosmos';
-            src: url('PlanetKosmos.ttf');
-        }
-
-        body {
-            background-color: #111;
-            color: white;
-            font-family: 'PlanetKosmos';
-            text-align: center;
-            padding-top: 60px;
-        }
-
-        h1 {
-            font-size: 40px;
-            letter-spacing: 5px;
-        }
-
-        .boton {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            background-color: #222;
-            color: white;
-            text-decoration: none;
-            border: 2px solid white;
-            transition: 0.3s;
-        }
-
-        .boton:hover {
-            background-color: white;
-            color: black;
-        }
-
-        .cd {
-            width: 400px;
-            height: auto;
-            display: block;
-            margin: 30px auto;
-        }
-
-        .gif-left {
-            position: fixed;
-            left: 10px;
-            bottom: 10px;
-            width: 320px;
-        }
-
-        .gif-right {
-            position: fixed;
-            right: 10px;
-            top: 10px;
-            width: 670px;
-        }
-    </style>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <h1>MI ÁLBUM</h1>
-    <p>Escuchá el proyecto completo acá:</p>
+<div class="spacer">
+    <h1>SCROLLEÁ ↓</h1>
+</div>
 
-    <a class="boton" href="https://youtube.com/watch?v=JxtmAx4_h6o target="_blank">
-        ESCUCHAR AHORA
-    </a>
+<section id="section">
 
-    <img src="cd.gif" class="cd">
+    <!-- Caja -->
+    <div id="case">
+        <img src="assets/images/case.png">
+    </div>
 
-    <!-- Gifs decorativos -->
-    <img src="gif1.gif" class="gif-left">
-    <img src="gif2.gif" class="gif-right">
+    <!-- CD -->
+   <video id="cd" autoplay loop muted>
+    <source src="assets/images/cd.mp4" type="video/mp4">
+</video>
 
+    <!-- Player -->
+    <div id="player">INSERT CD</div>
+
+    <!-- Tracks -->
+    <div id="tracks">
+        <p>TRACKS:</p>
+        <button onclick="play('https://youtube.com/watch?v=JxtmAx4_h6o')">Track 1</button>
+        <button onclick="play('https://youtube.com/@jeejolinzy888')">Track 2</button>
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
