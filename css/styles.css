@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.spacer {
+    height: 100vh;
+}
+
+#section {
+    height: 100vh;
+    position: relative;
+}
+
+/* Caja */
+#case {
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+
+#case img {
+    width: 180px;
+}
+
+/* CD */
+#cd {
+    width: 140px;
+    position: absolute;
+    left: 27%;
+    top: 42%;
+    transition: transform 1s ease;
+    cursor: default;
+}
+
+.salir {
+    transform: translateX(150px);
+}
+
+/* Player */
+#player {
+    position: absolute;
+    right: 25%;
+    top: 40%;
+    width: 220px;
+    height: 150px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tracks */
+#tracks {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
